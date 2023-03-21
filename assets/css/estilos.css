@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container {
+    margin: 10px 0 10px 0;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 40px 20px;
+    width: 35%;
+    height: fit-content;
+    min-width: 500px;
+    box-shadow: 0 15px 30px #000;
+}
+
+
+.container-nova-tarefa {
+    background-color: #FFF;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.container-nova-tarefa input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.container-nova-tarefa input:focus {
+    outline: none;
+    border-color: #8257E6;
+}
+
+.container-nova-tarefa button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #8257E6;
+    color: #FFF;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+    outline: outset 3px #A40EE4;
+}
+
+.container-nova-tarefa button:active {
+    outline: inset 3px #8257E6;
+}
+
+.container-tarefas {
+    background-color: #FFF;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.item-tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+    padding: 5px;
+    border-bottom: 2px solid #8257E6;
+}
+
+.item-tarefa i {
+    background-color: #8257E6;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFF;
+
+    transition: .5s;
+}
+
+.item-tarefa i:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0px 1em rgba(0, 0, 0, 0.5);
+}
+
+
+/* Utilitários */
+
+.error {
+    border: 2px solid rgb(155, 21, 21) !important;
+}
+
+.error::placeholder {
+    color: rgb(155, 21, 21);
+}
+
+.feito {
+    text-decoration: line-through;
+}
